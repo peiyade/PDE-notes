@@ -1,0 +1,66 @@
+\documentclass{article}
+
+%~~~~~~~~~ Document setup
+\usepackage[english]{babel} % English formatting
+\usepackage[utf8]{inputenc} % Standard encoding
+\usepackage[a4paper,left=3cm,bottom=3cm]{geometry} % Page formatting
+\usepackage{indentfirst} % Indents the first paragraph
+\usepackage{amsmath} % Maths type package
+\usepackage{bm} % Bold font maths
+\usepackage{graphicx} % Advanced graphics package
+\usepackage[export]{adjustbox} 
+\usepackage{pdflscape} % Make pages landscape
+\usepackage{fancyhdr} % Fancy headers
+\usepackage[colorlinks=true,citecolor=blue,urlcolor=blue,linkcolor=black]{hyperref} % Link colours
+\usepackage{natbib} % Bibliography
+\usepackage{flafter} % Reference any 'float'
+\usepackage[framemethod=tikz]{mdframed} % Box off stuff
+\usepackage{color} % Colour support
+\usepackage{wrapfig} % Text flowing around figures
+\usepackage{lipsum} % Generates meaningless text
+
+\graphicspath{ {Images/} } % Folder for images 
+
+%~~~~~~~~~ Multi-column setup
+\usepackage{multicol} % Multi Column Environment
+\setlength{\columnsep}{1cm}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{black}} % comment this to remove the line
+\usepackage{float} % Lets you add images to multi-column environment
+
+%~~~~~~~~~ Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Kat}
+\lfoot{LaTeX Tutorial}
+\rhead{February 2016}
+\rfoot{Page \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%~~~~~~~~~ Title
+\title{LaTeX (LAH-tekh) Tutorial}
+\author{Kat R}
+\date{\today}
+
+%~~~~~~~~~ Document start
+\begin{document}
+
+\pagenumbering{gobble} % keep title page without a number
+\maketitle
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic} % start page numbers again
+\setcounter{page}{1}
+
+
+\clearpage
+\newpage
+
+
+%~~~~~~~~~ Bibliography
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear}
+\bibliography{bib}
+
+\end{document}
